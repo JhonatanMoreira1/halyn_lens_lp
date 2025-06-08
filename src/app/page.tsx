@@ -9,7 +9,7 @@ import "@/components/EmblaCaurosel/css/sandbox.css";
 import "@/components/EmblaCaurosel/css/embla.css";
 import QuestionSection from "@/components/QuestionSection";
 import Storytelling from "@/components/Storytelling";
-import PromoSection from "@/components/PromoSection";
+import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/EmblaCaurosel/js/Footer";
 
 const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true };
@@ -23,7 +23,7 @@ export default function Home() {
       <EmblaCarousel slides={slides} options={OPTIONS} />
       <Footer />
       <div className="bg-[#250E2D]">
-        <PromoSection />
+        <HeroSection />
       </div>
 
       <Storytelling />

@@ -36,7 +36,7 @@ function DesktopNavbar() {
       <div className="mx-auto flex w-full items-center justify-between transition-all duration-300 ease-out">
         {/* Logo */}
         <Image
-          src="/haylen-logo.png"
+          src="/logos/haylen-logo.png"
           alt="Logo"
           width={scrolled ? 100 : 150}
           height={scrolled ? 33 : 50}

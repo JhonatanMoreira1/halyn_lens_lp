@@ -1,6 +1,8 @@
 // components/EmblaCarousel/SlideCard.tsx
+"use client";
 import React from "react";
 import { Slide } from "./SlideData";
+import Image from "next/image";
 
 type SlideCardProps = {
   slide: Slide;
@@ -9,9 +11,11 @@ type SlideCardProps = {
 const SlideCard: React.FC<SlideCardProps> = ({ slide }) => {
   return (
     <div className="embla__parallax__layer group relative overflow-hidden rounded-xl">
-      <img
+      <Image
         src={slide.image}
         alt={slide.alt || slide.caption}
+        width={1105}
+        height={500}
         className="embla__slide__img embla__parallax__img object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
         onError={(e) => {
           const target = e.target as HTMLImageElement;

@@ -11,11 +11,11 @@ import {
 import { Card, CardContent } from "./ui/card";
 
 const imagens = [
-  "/carrossel/img1.jpg",
-  "/carrossel/img2.jpg",
-  "/carrossel/img3.jpg",
-  "/carrossel/img4.jpg",
-  "/carrossel/img5.jpg",
+  "/carrossel/img1.webp",
+  "/carrossel/img2.webp",
+  "/carrossel/img3.webp",
+  "/carrossel/img4.webp",
+  "/carrossel/img5.webp",
 ];
 
 function Storytelling() {
@@ -77,7 +77,7 @@ function Storytelling() {
           {/* Imagem */}
           <div className="w-full h-[40em] md:w-1/2 flex items-start justify-center ml-[4em] md:px-0">
             <Image
-              src="/logoNova.png"
+              src="/logos/logoNova.png"
               alt="Modelo vertical"
               width={850}
               height={400}
@@ -106,9 +106,11 @@ function Storytelling() {
                 { title: "Conexão Criativa", icon: "/icons/icon5.svg" },
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <img
+                  <Image
                     src={item.icon}
                     alt={item.title}
+                    width={20}
+                    height={20}
                     className="w-20 h-20 invert"
                   />
                   <span className="text-4xl font-openSans text-gray-800">

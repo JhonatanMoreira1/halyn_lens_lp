@@ -35,7 +35,7 @@ export const slides: Slide[] = [
   },
   {
     id: 3,
-    image: "/photographs/foto3.jpg",
+    image: "/photographs/foto3.webp",
     caption: "Goticismo",
     description:
       "Sombras, emoções intensas e estética sombria definem o goticismo.",
@@ -46,7 +46,7 @@ export const slides: Slide[] = [
   },
   {
     id: 4,
-    image: "/photographs/foto4.jpg",
+    image: "/photographs/foto4.webp",
     caption: "Floresta Encantada",
     description: "Trilha em meio à mata densa e úmida.",
     photographer: {
@@ -56,7 +56,7 @@ export const slides: Slide[] = [
   },
   {
     id: 5,
-    image: "/photographs/foto5.jpg",
+    image: "/photographs/foto5.webp",
     caption: "Vintage",
     description: "O charme e a autenticidade do passado traduzidos em estilo.",
     photographer: {
@@ -66,7 +66,7 @@ export const slides: Slide[] = [
   },
   {
     id: 6,
-    image: "/photographs/foto6.jpg",
+    image: "/photographs/foto6.webp",
     caption: "Floresta Encantada",
     description: "Trilha em meio à mata densa e úmida.",
     photographer: {
@@ -76,7 +76,7 @@ export const slides: Slide[] = [
   },
   {
     id: 7,
-    image: "/photographs/foto7.jpg",
+    image: "/photographs/foto7.webp",
     caption: "Floresta Encantada",
     description: "Trilha em meio à mata densa e úmida.",
     photographer: {
