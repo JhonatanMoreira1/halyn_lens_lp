@@ -28,8 +28,8 @@ function DesktopNavbar() {
     <div
       className={`fixed md:min-w-screen top-0 w-full z-50 transition-all duration-300 ease-out ${
         scrolled
-          ? "bg-[#9e87ddb2] backdrop-blur-sm shadow-md h-[6%]"
-          : "bg-white shadow-md h-[9%]"
+          ? "bg-[#9e87ddb2] backdrop-blur-sm shadow-md h-[7%]"
+          : "bg-white shadow-md h-[10%]"
       }`}
       style={{ transformOrigin: "top center" }}
     >
