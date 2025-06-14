@@ -23,13 +23,15 @@ const SlideCard: React.FC<SlideCardProps> = ({ slide }) => {
         }}
       />
       <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white no-select">
-        <h3 className="text-5xl font-semibold">{slide.caption}</h3>
-        <p className="text-2xl mt-1 font-mono">{slide.description}</p>
+        <h3 className="text-5xl font-playfair tracking-wide mb-1">
+          {slide.caption}
+        </h3>
+        <p className="text-2xl mt-1 font-comfortaa">{slide.description}</p>
         <a
           href={slide.photographer.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-2xl text-[#b19fe2] underline underline-offset-2 mt-1 font-serif tracking-wider"
+          className="text-xl text-[#b19fe2] underline underline-offset-2 mt-1 font-bold tracking-wider"
         >
           {slide.photographer.name}
         </a>

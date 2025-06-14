@@ -8,6 +8,7 @@ import {
   paytoneOneFont,
   caveatFont,
   comfortaaFont,
+  playfairFont,
 } from "./fonts";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -28,7 +29,10 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${robotoFont.variable} ${montserratFont.variable} ${montserratAlternatesFont.variable} ${openSansFont.variable} ${shantellSansFont.variable} ${paytoneOneFont.variable} ${caveatFont.variable} ${comfortaaFont.variable}`}
+      className={`${robotoFont.variable} ${montserratFont.variable} 
+      ${montserratAlternatesFont.variable} ${openSansFont.variable} 
+      ${shantellSansFont.variable} ${paytoneOneFont.variable} 
+      ${caveatFont.variable} ${comfortaaFont.variable} ${playfairFont.variable}`}
     >
       <body>
         <ThemeProvider
@@ -40,11 +44,8 @@ export default function RootLayout({
           <div className="min-h-screen">
             <DesktopNavbar />
 
-            <main
-              className={`pt-[105px] py-8 bg-gradient-to-b from-white to-[##250E2D]`}
-            >
+            <main className="">
               {/* container to center the content */}
-
               {children}
             </main>
           </div>

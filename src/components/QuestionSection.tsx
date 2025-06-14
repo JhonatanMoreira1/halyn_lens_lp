@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -9,11 +9,37 @@ import {
 } from "@/components/ui/accordion";
 
 function QuestionSection() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // só anima uma vez
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="questionSection ">
-      <hr className="w-full border-t border-gray-300 mb-4" />
+    <div
+      ref={sectionRef}
+      className={`transitionBlock transition-all duration-1000 ease-out ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      } z-20`}
+    >
+      <hr className="w-full border-t border-gray-300 mb-10" />
       <div className="flex justify-center">
-        <div className="flex flex-row max-w-md rounded-lg md:max-w-[90em]">
+        <div className="flex flex-row h-full max-w-md rounded-lg md:max-w-[90em]">
           <div className="flex flex-col h-[40em] pr-[6em] py-12 items-center ">
             <h1 className="font-openSans text-4xl font-bold text-black mb-15 text-center">
               Por que haylen lens é pra você?
@@ -115,8 +141,22 @@ function QuestionSection() {
                     expectativas e preços.
                   </AccordionContent>
                 </AccordionItem>
-
                 <AccordionItem value="item-6">
+                  <AccordionTrigger className="text-4xl [&_svg]:w-6 [&_svg]:h-6">
+                    Qual o processo desde o primeiro contato até a entrega
+                    final?
+                  </AccordionTrigger>
+                  <AccordionContent className="font-roboto text-left pl-10 text-3xl text-[#2b2a2adc] leading-relaxed">
+                    Se tiver alguma dúvida ou decidir marcar uma sessão com um
+                    de nossos profissionais, todos os esclarecimentos e
+                    agendamentos são feitos via WhatsApp em nosso número
+                    oficial. Após todos os agendamentos serem concluídos com
+                    nossa equipe técnica, será encaminhado a você o número do
+                    profissional, para que o fotógrafo entenda suas expectativas
+                    e exclusividades.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-7">
                   <AccordionTrigger className="text-4xl [&_svg]:w-6 [&_svg]:h-6">
                     Quanto tempo leva para receber as fotos?
                   </AccordionTrigger>
@@ -124,23 +164,6 @@ function QuestionSection() {
                     Um prazo estimado é fornecido por cada fotógrafo ao marcar a
                     sessão, os pacotes prontos já possuem prazos estimados na
                     descrição.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-7">
-                  <AccordionTrigger className="text-4xl [&_svg]:w-6 [&_svg]:h-6">
-                    Qual o processo desde o primeiro contato até a entrega
-                    final?
-                  </AccordionTrigger>
-                  <AccordionContent className="font-roboto text-left pl-10 text-3xl text-[#2b2a2adc] leading-relaxed">
-                    Nossa plataforma foi desenvolvida para que nela você pode
-                    explorar os estilos e identidades visuais de cada fotógrafo,
-                    se precisar de ajuda ou decidir marcar uma sessão com um de
-                    nossos profissionais, todos os esclarecimentos e
-                    agendamentos são feitos via WhatsApp em nosso número
-                    oficial. Após todos os agendamentos serem concluídos com
-                    nossa equipe técnica, será encaminhado a você o número
-                    individual do profissional escolhido, para que o fotógrafo
-                    entenda suas expectativas e exclusividades.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

@@ -2,7 +2,9 @@ import React from "react";
 
 const Header: React.FC = () => (
   <header>
-    <h1 className="header">Gêneros fotográficos únicos</h1>
+    <h1 className="header font-playfair tracking-wider">
+      Estilos fotográficos únicos
+    </h1>
   </header>
 );
 

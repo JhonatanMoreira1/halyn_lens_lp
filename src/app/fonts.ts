@@ -68,3 +68,11 @@ export const caveatFont = Caveat({
   subsets: ["latin", "latin-ext"],
   variable: "--font-caveat",
 });
+
+import { Playfair_Display } from "next/font/google";
+
+export const playfairFont = Playfair_Display({
+  weight: "400",
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-playfair",
+});

@@ -15,37 +15,37 @@ import { AnimatedTestimonials } from "./ui/animated-testimonials";
 const testimonials = [
   {
     quote:
-      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-    name: "Sarah Chen",
-    designation: "Product Manager at TechFlow",
-    src: "/photographers/photographer1.webp",
-  },
-  {
-    quote:
-      "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-    name: "Michael Rodriguez",
-    designation: "CTO at InnovateSphere",
+      "Cada sessão é um mergulho profundo na estética do cliente. Através da minha lente, quero que cada pessoa se veja como arte.",
+    name: "Luiza Amaral",
+    designation: "Fotógrafa de moda editorial e minimalismo contemporâneo",
     src: "/photographers/photographer2.webp",
   },
   {
     quote:
-      "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-    name: "Emily Watson",
-    designation: "Operations Director at CloudScale",
+      "Busco capturar não só o estilo, mas a energia de quem está diante da câmera. A moda é o que veste, mas a alma é o que preenche.",
+    name: "Bruno Neves",
+    designation: "Fotógrafo de retratos expressivos e luz natural",
+    src: "/photographers/photographer1.webp",
+  },
+  {
+    quote:
+      "Minha fotografia gira em torno do movimento e da fluidez. Trabalho com o corpo em ação, revelando histórias através do gesto.",
+    name: "Mathias Duarte",
+    designation: "Fotógrafo de moda performática e dança",
     src: "/photographers/photographer3.webp",
   },
   {
     quote:
-      "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-    name: "James Kim",
-    designation: "Engineering Lead at DataPro",
+      "Acredito no impacto do contraste. Meus ensaios exploram o urbano, o brilho do asfalto e a estética crua das ruas.",
+    name: "Cael dos Santos",
+    designation: "Fotógrafo de moda urbana e estética industrial",
     src: "/photographers/photographer4.webp",
   },
   {
     quote:
-      "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-    name: "Lisa Thompson",
-    designation: "VP of Technology at FutureNet",
+      "Meu foco é revelar o luxo do silêncio. Trabalho com paletas suaves e composições sutis, onde menos sempre diz mais.",
+    name: "Pedro Nunes",
+    designation: "Fotógrafo de alta moda e estética soft luxury",
     src: "/photographers/photographer5.webp",
   },
 ];
@@ -104,73 +104,75 @@ function HeroSection() {
           </div>
 
           {/* Bloco de informações e testimonials */}
-          <div className="flex min-h-[30em] p-[1.5rem] justify-around mb-20 z-30">
-            <div className="text-white space-y-14 h-full w-full max-w-4xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <div className="flex min-h-[30em] w-full pt-[2em] px-[8em] justify-around mb-20 z-30">
+            <div className="text-white space-y-14">
+              <h1 className="text-4xl max-w-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Se expresse por meio da fotografia
               </h1>
-              <p className="text-base md:text-3xl text-white w-full max-w-6xl">
+              <p className="text-base md:text-3xl text-white w-full max-w-5xl">
                 Nossa missão é transmitir sentimentos através de cliques,
                 entendendo seu estilo e gênero favorito. Os fotógrafos da Haylen
                 Lens possuem gêneros de fotografia distintos, justamente para
                 que qualquer cliente encontre sua lente ideal.
               </p>
               <Button className="bg-orange-500 hover:bg-[#D3B578] text-white font-semibold text-2xl px-12 py-9 rounded-full shadow-lg transition mt-10">
-                Conheça nossos fotógrafos
+                Faça seu orçamento online
               </Button>
             </div>
 
             {/* Testimonials animados */}
-            <div className="h-full z-40">
+            <div className="h-full  z-40">
               <AnimatedTestimonials testimonials={testimonials} />
             </div>
           </div>
 
           {/* Bloco de ícones e carrossel */}
-          <div className="flex justify-center items-center mb-30 mt-[-30] z-20">
-            <div className="w-[85%] max-w-[1300px] max-h-[40em] aspect-square bg-white flex flex-col items-center justify-center rounded-t-2xl z-20">
-              <div className="w-full max-w-[1300px] max-h-[40em] aspect-square bg-white flex flex-col items-start pt-20 rounded-t-2xl z-20">
-                <div className="flex flex-row justify-between w-[85%] mx-auto gap-8">
+          <div className="flex justify-center items-center mb-0 z-20">
+            <div className="w-[85%] max-w-[1200px] max-h-[40em] aspect-square bg-white flex flex-col items-center justify-center rounded-t-2xl z-20">
+              <div className="w-full max-w-[1200px] max-h-[45em] h-[85%] aspect-square bg-white flex flex-col items-start pt-0 rounded-t-2xl z-20">
+                <div className="flex flex-row justify-between w-[85%] mx-auto gap-8 pb-[3.9rem]">
                   {/* Bloco 1 */}
-                  <div className="flex-1 text-center px-4">
-                    <div className="text-4xl mb-4">🔊</div>
-                    <h3 className="text-3xl font-semibold mb-2 pb-15">
-                      Your music everywhere for one
+                  <div className="flex-1 text-center pt-4">
+                    <div className="text-4xl mb-4">🎯</div>
+                    <h3 className="text-3xl font-semibold pb-10">
+                      Fotografia com propósito
                     </h3>
                     <p className="text-gray-600 text-2xl">
-                      {" "}
-                      Relax. Unlike some services, we don’t charge you annually
-                      to keep your music online...
+                      Cada imagem é pensada para transmitir a essência de quem
+                      você é. A Halyn Lens acredita que sua identidade visual é
+                      seu maior ativo.
                     </p>
                   </div>
 
                   {/* Bloco 2 */}
-                  <div className="flex-1 text-center px-4">
-                    <div className="text-4xl mb-4">💰</div>
-                    <h3 className="text-3xl font-semibold mb-2 pb-15">
-                      Collect all your royalties
+                  <div className="flex-1 text-center pt-4">
+                    <div className="text-4xl mb-4">🧠</div>
+                    <h3 className="text-3xl font-semibold pb-10">
+                      Diversidade de estilos criativos
                     </h3>
                     <p className="text-gray-600 text-2xl">
-                      Every stream generates money for you. We help you collect
-                      your mechanical...
+                      Encontre o fotógrafo ideal para o seu projeto. Temos
+                      profissionais com linguagens únicas para diferentes
+                      expressões visuais.
                     </p>
                   </div>
 
                   {/* Bloco 3 */}
-                  <div className="flex-1 text-center px-4">
-                    <div className="text-4xl mb-4">🌐</div>
-                    <h3 className="text-3xl font-semibold mb-2 pb-15">
-                      Monetize on social media
+                  <div className="flex-1 text-center pt-4">
+                    <div className="text-4xl mb-4">🤝</div>
+                    <h3 className="text-3xl font-semibold pb-10">
+                      Processos claros e humanizados
                     </h3>
                     <p className="text-gray-600 text-2xl">
-                      Collect money every time a video streams with your music.
-                      Global YouTube...
+                      Do orçamento ao clique final, você participa ativamente.
+                      Transparência, escuta e sensibilidade são partes do nosso
+                      processo.
                     </p>
                   </div>
                 </div>
 
                 {/* Carrossel infinito */}
-                <div className="infiniteCaurosel flex flex-col justify-center items-center h-full w-full mb-0 pb-0 z-30">
+                <div className="infiniteCaurosel flex flex-col justify-center items-center h-full w-full z-30">
                   <Header />
                   <div>
                     <EmblaAutoScrollCarousel

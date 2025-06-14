@@ -1,19 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+// import { Button } from "@/components/ui/button";
+// import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
+// import { useRouter } from "next/navigation";
+// import {
+//   DropdownMenu,
+//   DropdownMenuTrigger,
+//   DropdownMenuContent,
+//   DropdownMenuItem,
+// } from "@/components/ui/dropdown-menu";
 
 function DesktopNavbar() {
-  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -27,58 +26,101 @@ function DesktopNavbar() {
 
   return (
     <div
-      className={`fixed md:min-w-screen top-0 w-full z-50 transition-all duration-300 ease-out${
+      className={`fixed md:min-w-screen top-0 w-full z-50 transition-all duration-300 ease-out ${
         scrolled
-          ? "py-0 mb-0 bg-[#9e87ddb2] backdrop-blur-sm shadow-md"
-          : "py-0 mb-0 bg-white shadow-md"
+          ? "bg-[#9e87ddb2] backdrop-blur-sm shadow-md h-[6%]"
+          : "bg-white shadow-md h-[9%]"
       }`}
+      style={{ transformOrigin: "top center" }}
     >
-      <div className="mx-auto flex w-full items-center justify-between transition-all duration-300 ease-out">
-        {/* Logo */}
-        <Image
-          src="/logos/haylen-logo.png"
-          alt="Logo"
-          width={scrolled ? 100 : 150}
-          height={scrolled ? 33 : 50}
-          className="transition-all duration-300 ease-out ml-[10em] py-5 my-0"
-          priority
-        />
+      <header className="py-4 md:py-6 w-full h-full">
+        <div className="px-15 mx-auto max-w-[80em] sm:px-6 lg:px-8 w-full h-full">
+          <div className="flex items-center justify-between w-full h-full">
+            <div className="flex flex-shrink-0 flex-row items-center">
+              <Image
+                width={scrolled ? 75 : 120}
+                height={scrolled ? 25 : 40}
+                className="transition-all duration-300 ease-out"
+                src={"/logos/haylen-logo.png"}
+                alt=""
+              />
+              <h1 className="font-caveat text-6xl font-bold text-black">
+                Haylen Lens
+              </h1>
+            </div>
 
-        {/* Links */}
-        <div className="flex items-center gap-6 text-sm md:text-base transition-all duration-100 ease-out mr-15">
-          <Button variant="link" asChild>
-            <Link href="/">
-              <span className="hidden lg:inline">Sobre</span>
-            </Link>
-          </Button>
-          <Button variant="link" asChild>
-            <Link href="/">
-              <span className="hidden lg:inline">Serviços</span>
-            </Link>
-          </Button>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="link">Categorias</Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem onClick={() => router.push("/pagina1")}>
-                Estilo 1
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => router.push("/pagina2")}>
-                Estilo 2
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => router.push("/pagina3")}>
-                Estilo 3
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-          <Button variant="link" asChild>
-            <Link href="/">
-              <span className="hidden lg:inline">Contato</span>
-            </Link>
-          </Button>
+            <div className="flex lg:hidden">
+              <button type="button" className="text-gray-900">
+                <svg
+                  className="w-7 h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <div className="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10">
+              <div className="flex items-center space-x-12">
+                <a
+                  href="#"
+                  title=""
+                  className="text-2xl font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  {" "}
+                  Sobre{" "}
+                </a>
+
+                <a
+                  href="#"
+                  title=""
+                  className="text-2xl font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  {" "}
+                  Unidades{" "}
+                </a>
+
+                <a
+                  href="#"
+                  title=""
+                  className="text-2xl font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  {" "}
+                  Ajuda{" "}
+                </a>
+              </div>
+
+              <div className="w-px h-5 bg-gray-300"></div>
+
+              <a
+                href="#"
+                title=""
+                className="text-2xl font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+              >
+                {" "}
+                Serviços{" "}
+              </a>
+
+              <a
+                href="#"
+                title=""
+                className="px-5 py-2 text-2xl font-semibold leading-7 text-gray-900 transition-all duration-200 bg-transparent border border-gray-900 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white"
+                role="button"
+              >
+                Entre em contato
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+      </header>
     </div>
   );
 }
