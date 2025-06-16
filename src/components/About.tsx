@@ -43,16 +43,16 @@ function AboutUs14() {
                   SOBRE NÓS
                 </h1>
                 <p className="text-xl lg:text-2xl leading-relaxed opacity-90">
-                  A Haylen Lens é um estúdio fotográfico autoral que transforma
+                  A Halyn Lens é um estúdio fotográfico autoral que transforma
                   imagens em narrativas visuais profundas e autênticas.
                   Especializada em retratar identidade, expressão e estética com
                   sensibilidade artística, a marca vai além da captura — ela
                   traduz emoções e histórias por meio da luz e da composição.
                   Cada clique carrega propósito, estilo e uma assinatura visual
-                  distinta. Reunindo fotógrafos com visões únicas, a Haylen
+                  distinta. Reunindo fotógrafos com visões únicas, a Halyn
                   celebra a diversidade de olhares e estilos dentro de um mesmo
                   universo criativo. Seja em projetos pessoais, editoriais ou
-                  comerciais, a Haylen Lens entrega imagens que falam por si. É
+                  comerciais, a Halyn Lens entrega imagens que falam por si. É
                   fotografia com alma, intenção e identidade.
                 </p>
                 <div className="mt-10">

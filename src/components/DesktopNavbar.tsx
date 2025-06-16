@@ -28,31 +28,31 @@ function DesktopNavbar() {
     <div
       className={`fixed md:min-w-screen top-0 w-full z-50 transition-all duration-300 ease-out ${
         scrolled
-          ? "bg-[#9e87ddb2] backdrop-blur-sm shadow-md h-[7%]"
-          : "bg-white shadow-md h-[10%]"
+          ? "bg-[#9e87ddb2] backdrop-blur-sm shadow-md h-20 md:h-20 lg:h-22"
+          : "bg-white shadow-md sm:h-40 md:h-35 lg:h-35"
       }`}
       style={{ transformOrigin: "top center" }}
     >
-      <header className="py-4 md:py-6 w-full h-full">
-        <div className="px-15 mx-auto max-w-[80em] sm:px-6 lg:px-8 w-full h-full">
+      <header className="py-3 sm:py-4 md:py-6 w-full h-full overflow-hidden">
+        <div className="px-4 sm:px-6 lg:px-8 mx-auto max-w-[80em] w-full h-full">
           <div className="flex items-center justify-between w-full h-full">
-            <div className="flex flex-shrink-0 flex-row items-center">
+            <div className="flex flex-shrink-0 flex-row items-center space-x-3 flex-wrap">
               <Image
-                width={scrolled ? 75 : 120}
-                height={scrolled ? 25 : 40}
-                className="transition-all duration-300 ease-out"
-                src={"/logos/haylen-logo.png"}
+                width={scrolled ? 60 : 105}
+                height={scrolled ? 20 : 35}
+                className="transition-all duration-300 ease-out max-w-full h-auto"
+                src={"/logos/halyn-logo.png"}
                 alt=""
               />
-              <h1 className="font-caveat text-6xl font-bold text-black">
-                Haylen Lens
+              <h1 className="font-cormorant text-4xl sm:text-6xl font-bold text-black">
+                Halyn Lens
               </h1>
             </div>
 
             <div className="flex lg:hidden">
               <button type="button" className="text-gray-900">
                 <svg
-                  className="w-7 h-7"
+                  className="w-9 h-9 mr-5"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"

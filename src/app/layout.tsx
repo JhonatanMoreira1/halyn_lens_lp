@@ -6,7 +6,7 @@ import {
   openSansFont,
   shantellSansFont,
   paytoneOneFont,
-  caveatFont,
+  cormorantFont,
   comfortaaFont,
   playfairFont,
 } from "./fonts";
@@ -15,7 +15,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import DesktopNavbar from "@/components/DesktopNavbar";
 
 export const metadata: Metadata = {
-  title: "Haylen Lens",
+  title: "Halyn Lens",
   description:
     "Um mundo onde todos possam expressar quem são sem medo por meio da fotografia.",
 };
@@ -32,7 +32,7 @@ export default function RootLayout({
       className={`${robotoFont.variable} ${montserratFont.variable} 
       ${montserratAlternatesFont.variable} ${openSansFont.variable} 
       ${shantellSansFont.variable} ${paytoneOneFont.variable} 
-      ${caveatFont.variable} ${comfortaaFont.variable} ${playfairFont.variable}`}
+      ${cormorantFont.variable} ${comfortaaFont.variable} ${playfairFont.variable}`}
     >
       <body>
         <ThemeProvider

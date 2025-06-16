@@ -99,19 +99,19 @@ function HeroSection() {
         >
           {/* Conteúdo central */}
           <div className="relative p-20 text-white flex flex-col text-center space-y-5 z-30">
-            <h1 className="text-7xl font-bold">Conheça a haylen lens</h1>
+            <h1 className="text-7xl font-bold">Conheça a Halyn Lens</h1>
             <p className="text-3xl">A marca de fotografia perfeita para você</p>
           </div>
 
           {/* Bloco de informações e testimonials */}
-          <div className="flex min-h-[30em] w-full pt-[2em] px-[8em] justify-between mb-20 z-30">
+          <div className="flex flex-col-reverse lg:flex-row min-h-[30em] w-full pt-[2em] px-[8em] justify-between mb-20 z-30">
             <div className="text-white space-y-14">
               <h1 className="text-4xl max-w-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Se expresse por meio da fotografia
               </h1>
               <p className="text-base md:text-3xl text-white w-full max-w-5xl lg:max-w-4xl">
                 Nossa missão é transmitir sentimentos através de cliques,
-                entendendo seu estilo e gênero favorito. Os fotógrafos da Haylen
+                entendendo seu estilo e gênero favorito. Os fotógrafos da Halyn
                 Lens possuem gêneros de fotografia distintos, justamente para
                 que qualquer cliente encontre sua lente ideal.
               </p>

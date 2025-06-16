@@ -29,7 +29,7 @@ function Footer() {
           </ul>
 
           <p className="text-2xl text-gray-500 dark:text-gray-400">
-            &copy; 2025. Haylen Lens. Todos os direitos reservados.
+            &copy; 2025. Halyn Lens. Todos os direitos reservados.
           </p>
 
           <ul className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">

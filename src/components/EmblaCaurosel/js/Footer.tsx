@@ -5,8 +5,8 @@ import React from "react";
 const Footer: React.FC = () => (
   <div className="flex flex-col justify-center pt-3  z-50 w-full h-full items-center">
     <div className="text-left w-full max-w-4xl">
-      <h1 className="font-caveat text-7xl font-bold text-black mb-6">
-        Haylen Lens
+      <h1 className="font-cormorant text-7xl font-bold text-black mb-6">
+        Halyn Lens
       </h1>
       <p className="text-2xl text-gray-800 text-justify z-50 w-full font-comfortaa">
         Trazemos o pensamento de que os estilistas devem conseguir transmitir

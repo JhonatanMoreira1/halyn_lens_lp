@@ -61,12 +61,12 @@ export const comfortaaFont = Comfortaa({
   variable: "--font-comfortaa",
 });
 
-import { Caveat } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 
-export const caveatFont = Caveat({
+export const cormorantFont = Cormorant_Garamond({
   weight: "400",
   subsets: ["latin", "latin-ext"],
-  variable: "--font-caveat",
+  variable: "--font-cormorant",
 });
 
 import { Playfair_Display } from "next/font/google";
