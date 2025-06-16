@@ -27,7 +27,7 @@ Este projeto foi desenvolvido para fins acadêmicos, como contribuição para a 
 
 1. Clone o repositório:  
    ```bash
-   git clone https://github.com/seu-usuario/halyn-lens-landing.git
+   git clone https://github.com/JhonatanMoreira1/halyn_lens_lp.git
 2. Instale as dependências:
     ```bash
     npm install
