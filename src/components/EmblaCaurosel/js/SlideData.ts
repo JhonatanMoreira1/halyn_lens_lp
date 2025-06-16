@@ -105,7 +105,7 @@ export const slides: Slide[] = [
   },
   {
     id: 10,
-    image: "/photographsAuto/grunge4.webp",
+    image: "/photographs/grunge2.webp",
     caption: "Grunge",
     description: "Camadas desleixadas, xadrez, e uma vibe crua e urbana.",
     photographer: {

@@ -104,12 +104,12 @@ function HeroSection() {
           </div>
 
           {/* Bloco de informações e testimonials */}
-          <div className="flex min-h-[30em] w-full pt-[2em] px-[8em] justify-around mb-20 z-30">
+          <div className="flex min-h-[30em] w-full pt-[2em] px-[8em] justify-between mb-20 z-30">
             <div className="text-white space-y-14">
               <h1 className="text-4xl max-w-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Se expresse por meio da fotografia
               </h1>
-              <p className="text-base md:text-3xl text-white w-full max-w-5xl">
+              <p className="text-base md:text-3xl text-white w-full max-w-5xl lg:max-w-4xl">
                 Nossa missão é transmitir sentimentos através de cliques,
                 entendendo seu estilo e gênero favorito. Os fotógrafos da Haylen
                 Lens possuem gêneros de fotografia distintos, justamente para
