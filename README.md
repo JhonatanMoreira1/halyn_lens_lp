@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Halyn Lens - Landing Page
 
-## Getting Started
+![Halyn Lens Logo](public/logos/halyn-logo.png)
 
-First, run the development server:
+## Sobre
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Landing page da **Halyn Lens**, uma marca fictícia de fotografia com o slogan **"As lentes que refletem você"**. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este projeto foi desenvolvido para fins acadêmicos, como contribuição para a criação da marca Halyn Lens, dentro da competição **Ztalent**, uma competição de habilidades da **Escola Zion**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> **Aviso:**  
+> Esta landing page não é um site profissional, mas sim um projeto conceitual e educativo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tecnologias Utilizadas
 
-## Learn More
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-To learn more about Next.js, take a look at the following resources:
+## Estrutura do Projeto
+ 
+- Componentes React escritos em TypeScript  
+- Estilização via Tailwind CSS para responsividade e design moderno
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Como Rodar Localmente
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone o repositório:  
+   ```bash
+   git clone https://github.com/seu-usuario/halyn-lens-landing.git
+2. Instale as dependências:
+    ```bash
+    npm install
+    # ou
+    yarn install
+3. Rode o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+    # ou
+    yarn dev
+4. Acesse no navegador:
+    ```bash
+    http://localhost:3000
+Contribuição
+Contribuições são bem-vindas para melhorias, correções e sugestões relacionadas ao projeto.
 
-## Deploy on Vercel
+## Licença
+Este projeto é para fins acadêmicos e de aprendizado, livre para uso e adaptação conforme necessário.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Halyn Lens — As lentes que refletem você
+Projeto desenvolvido para a competição Ztalent da Escola Zion
