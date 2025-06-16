@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Halyn Lens",
   description:
     "Um mundo onde todos possam expressar quem são sem medo por meio da fotografia.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

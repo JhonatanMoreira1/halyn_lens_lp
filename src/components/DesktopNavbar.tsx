@@ -38,8 +38,8 @@ function DesktopNavbar() {
           <div className="flex items-center justify-between w-full h-full">
             <div className="flex flex-shrink-0 flex-row items-center space-x-3 flex-wrap">
               <Image
-                width={scrolled ? 60 : 105}
-                height={scrolled ? 20 : 35}
+                width={scrolled ? 60 : 90}
+                height={scrolled ? 20 : 30}
                 className="transition-all duration-300 ease-out max-w-full h-auto"
                 src={"/logos/halyn-logo.png"}
                 alt=""
