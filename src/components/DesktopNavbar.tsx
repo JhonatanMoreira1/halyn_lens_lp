@@ -44,7 +44,7 @@ function DesktopNavbar() {
                 src={"/logos/halyn-logo.png"}
                 alt=""
               />
-              <h1 className="font-cormorant text-4xl sm:text-6xl font-bold text-black">
+              <h1 className="font-cormorant italic text-4xl sm:text-6xl font-bold text-black">
                 Halyn Lens
               </h1>
             </div>

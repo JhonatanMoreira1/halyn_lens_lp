@@ -4,7 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import EmblaAutoScrollCarousel from "./AutoScrollEmblaCaurosel/js/EmblaCaurosel";
 import { EmblaOptionsType } from "embla-carousel";
 import Header from "./AutoScrollEmblaCaurosel/js/Header";
-import { FaWhatsapp } from "react-icons/fa";
+import {
+  FaBullseye,
+  FaPalette,
+  FaPeopleCarry,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 import { slides } from "./AutoScrollEmblaCaurosel/js/SlideData";
 import "./AutoScrollEmblaCaurosel/css/base.css";
@@ -15,38 +20,43 @@ import { AnimatedTestimonials } from "./ui/animated-testimonials";
 const testimonials = [
   {
     quote:
-      "Cada sessão é um mergulho profundo na estética do cliente. Através da minha lente, quero que cada pessoa se veja como arte.",
+      "Busco revelar a sofisticação na simplicidade. Minha fotografia é um espaço onde a forma limpa e o olhar intenso convivem com elegância.",
     name: "Luiza Amaral",
-    designation: "Fotógrafa de moda editorial e minimalismo contemporâneo",
+    designation: "Moda editorial minimalista e retratos conceituais",
     src: "/photographers/photographer2.webp",
+    link: "https://unsplash.com/pt-br/@luizaamaral/cole%C3%A7%C3%B5es",
   },
   {
     quote:
-      "Busco capturar não só o estilo, mas a energia de quem está diante da câmera. A moda é o que veste, mas a alma é o que preenche.",
+      "Cada rosto tem uma narrativa oculta. Meu trabalho é iluminar essa verdade através da espontaneidade e da luz natural.",
     name: "Bruno Neves",
-    designation: "Fotógrafo de retratos expressivos e luz natural",
+    designation: "Retratos sensíveis em luz natural e storytelling visual",
     src: "/photographers/photographer1.webp",
+    link: "https://unsplash.com/pt-br/@brunoneves/cole%C3%A7%C3%B5es",
   },
   {
     quote:
-      "Minha fotografia gira em torno do movimento e da fluidez. Trabalho com o corpo em ação, revelando histórias através do gesto.",
+      "A beleza do movimento é a essência do meu olhar. Meu foco está em corpos em transição, moda que flui e gestos que dizem tudo.",
     name: "Mathias Duarte",
-    designation: "Fotógrafo de moda performática e dança",
+    designation: "Moda performática, movimento corporal e moda fluida",
     src: "/photographers/photographer3.webp",
+    link: "https://unsplash.com/pt-br/@mathiasduarte/cole%C3%A7%C3%B5es",
   },
   {
     quote:
-      "Acredito no impacto do contraste. Meus ensaios exploram o urbano, o brilho do asfalto e a estética crua das ruas.",
-    name: "Cael dos Santos",
-    designation: "Fotógrafo de moda urbana e estética industrial",
+      "Exploro o encontro entre moda e concreto. Minhas fotos traduzem atitude, textura urbana e personalidade bruta.",
+    name: "Yago de Almeida",
+    designation: "Moda streetwear, cenário urbano e brutalismo estético",
     src: "/photographers/photographer4.webp",
+    link: "https://unsplash.com/pt-br/@yagodealmeida/cole%C3%A7%C3%B5es",
   },
   {
     quote:
-      "Meu foco é revelar o luxo do silêncio. Trabalho com paletas suaves e composições sutis, onde menos sempre diz mais.",
+      "Trabalho com a delicadeza como linguagem visual. Luxo, para mim, vive nos detalhes suaves e nas atmosferas silenciosas.",
     name: "Pedro Nunes",
-    designation: "Fotógrafo de alta moda e estética soft luxury",
+    designation: "Alta moda sensorial e estética soft luxury contemporânea",
     src: "/photographers/photographer5.webp",
+    link: "https://unsplash.com/pt-br/@pedronuness/cole%C3%A7%C3%B5es",
   },
 ];
 
@@ -134,7 +144,7 @@ function HeroSection() {
               <a
                 href="#"
                 title=""
-                className="inline-flex items-center px-7 py-3 text-2xl font-bold text-white transition-all duration-200 sm:mt-0 bg-[#b89554] hover:bg-[#f5ba43ca] border border-transparent rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj justif-center"
+                className="inline-flex items-center px-7 py-3 text-2xl font-bold text-white transition-all duration-200 sm:mt-0 bg-[#bb964b] hover:bg-[#9c7c3fef] border border-transparent rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj justif-center"
                 role="button"
               >
                 Faça seu orçamento online
@@ -152,10 +162,12 @@ function HeroSection() {
           <div className="flex justify-center items-center mb-0 z-20">
             <div className="w-screen sm:w-full max-w-[110rem] bg-white flex flex-col items-center justify-center rounded-t-2xl z-20">
               <div className="w-full flex flex-col items-start pt-0 rounded-t-2xl z-20 w-full">
-                <div className="flex flex-col md:flex-row justify-between w-full gap-12 mb-15  p-15">
+                <div className="flex flex-col md:flex-row justify-between w-full gap-12 mb-15 p-15">
                   {/* Bloco 1 */}
                   <div className="flex-1 text-center pt-4">
-                    <div className="text-4xl mb-4">🎯</div>
+                    <div className="text-5xl mb-4 text-[#daa126] mx-auto w-fit">
+                      <FaBullseye />
+                    </div>
                     <h3 className="text-3xl font-semibold pb-10">
                       Fotografia com propósito
                     </h3>
@@ -168,7 +180,9 @@ function HeroSection() {
 
                   {/* Bloco 2 */}
                   <div className="flex-1 text-center pt-4">
-                    <div className="text-4xl mb-4">🧠</div>
+                    <div className="text-5xl mb-4 text-[#daa126] mx-auto w-fit">
+                      <FaPalette />
+                    </div>
                     <h3 className="text-3xl font-semibold pb-10">
                       Diversidade de estilos criativos
                     </h3>
@@ -181,7 +195,9 @@ function HeroSection() {
 
                   {/* Bloco 3 */}
                   <div className="flex-1 text-center pt-4">
-                    <div className="text-4xl mb-4">🤝</div>
+                    <div className="text-5xl mb-4 text-[#daa126] mx-auto w-fit">
+                      <FaPeopleCarry />
+                    </div>
                     <h3 className="text-3xl font-semibold pb-10">
                       Processos claros e humanizados
                     </h3>

@@ -1,15 +1,17 @@
 "use client";
 
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState, useCallback } from "react";
+import { FaFolderOpen } from "react-icons/fa";
 
 type Testimonial = {
   quote: string;
   name: string;
   designation: string;
   src: string;
+  link: string;
 };
 
 export const AnimatedTestimonials = ({
@@ -21,6 +23,7 @@ export const AnimatedTestimonials = ({
 }) => {
   const [active, setActive] = useState(0);
   const [rotations, setRotations] = useState<number[]>([]);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
@@ -80,23 +83,86 @@ export const AnimatedTestimonials = ({
                     }}
                     transition={{
                       duration: 0.4,
-                      ease: "easeInOut",
+                      ease: [0.33, 1, 0.68, 1], // Curva super suave
                     }}
-                    className="absolute inset-0 origin-bottom"
+                    className="absolute inset-0 origin-center"
                   >
-                    <Image
-                      src={testimonial.src}
-                      alt={testimonial.name}
-                      width={800}
-                      height={800}
-                      draggable={false}
-                      className="h-full w-full rounded-3xl object-cover object-center"
-                    />
+                    <div
+                      className="relative h-full w-full overflow-hidden rounded-3xl"
+                      onMouseEnter={() =>
+                        isActive(index) && setHoveredIndex(index)
+                      }
+                      onMouseLeave={() => setHoveredIndex(null)}
+                    >
+                      {/* Container para a imagem com transform fixo */}
+                      <div className="absolute inset-0 h-full w-full">
+                        <motion.div
+                          className="h-full w-full"
+                          animate={{
+                            scale: hoveredIndex === index ? 1.2 : 1,
+                          }}
+                          transition={{
+                            duration: 0.5,
+                            ease: [0.33, 1, 0.68, 1],
+                          }}
+                          style={{
+                            willChange: "transform", // Otimização
+                            transformStyle: "preserve-3d",
+                          }}
+                        >
+                          <Image
+                            src={testimonial.src}
+                            alt={testimonial.name}
+                            width={800}
+                            height={800}
+                            draggable={false}
+                            className="h-full w-full object-cover object-center"
+                            style={{
+                              transform: "translateZ(0)",
+                              backfaceVisibility: "hidden", // Remove flickering
+                            }}
+                          />
+                        </motion.div>
+                      </div>
+
+                      {/* Overlay escuro no hover */}
+                      <motion.div
+                        className="absolute inset-0 bg-black pointer-events-none"
+                        initial={{ opacity: 0 }}
+                        animate={{
+                          opacity: hoveredIndex === index ? 0.5 : 0,
+                        }}
+                        transition={{
+                          duration: 0.4,
+                          ease: [0.33, 1, 0.68, 1],
+                        }}
+                      />
+
+                      {/* Botão Portfólio */}
+                      <motion.a
+                        href={testimonial.link}
+                        className="absolute bottom-0 left-2 right-2 flex items-center justify-center bg-[#bb964b] rounded-t-3xl bg-opacity-80 text-white text-3xl font-medium"
+                        initial={{ y: "100%", opacity: 0 }}
+                        animate={{
+                          y: hoveredIndex === index ? "0%" : "100%",
+                          opacity: hoveredIndex === index ? 1 : 0,
+                        }}
+                        transition={{
+                          duration: 0.5,
+                          ease: [0.33, 1, 0.68, 1],
+                        }}
+                        style={{ height: "15%" }}
+                      >
+                        <FaFolderOpen className="text-white mr-4" />
+                        Portfólio
+                      </motion.a>
+                    </div>
                   </motion.div>
                 ))}
             </AnimatePresence>
           </div>
         </div>
+        {/* this */}
 
         <div className="flex flex-col justify-between py-4">
           <motion.div

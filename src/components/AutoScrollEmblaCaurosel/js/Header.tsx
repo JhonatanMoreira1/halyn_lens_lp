@@ -1,8 +1,12 @@
 import React from "react";
+import { FaImages } from "react-icons/fa";
 
 const Header: React.FC = () => (
   <header>
-    <h1 className="header font-playfair tracking-wider">
+    <div className="text-5xl text-[#daa126] mx-auto w-fit p-0">
+      <FaImages />
+    </div>
+    <h1 className="header font-montserrat tracking-wider">
       Estilos fotográficos únicos
     </h1>
   </header>

@@ -15,102 +15,110 @@ export type Slide = {
 export const slides: Slide[] = [
   {
     id: 1,
-    image: "/photographsAuto/vintage3.webp",
-    caption: "Vintage",
-    description: "O charme e a autenticidade do passado traduzidos em estilo.",
+    image: "/photographsAuto/luiza3.webp",
+    caption: "Vintage e Minimalismo",
+    description:
+      "Looks retrô com composições limpas, foco na estética elegante e simples.",
     photographer: {
       name: "Luiza Amaral",
-      url: "#",
+      url: "https://unsplash.com/pt-br/@luizaamaral/cole%C3%A7%C3%B5es",
     },
   },
   {
     id: 2,
-    image: "/photographsAuto/preppy3.webp",
-    caption: "Preppy",
-    description: "Elegância acadêmica, cores suaves e toques de tradição.",
+    image: "/photographsAuto/pedro3.webp",
+    caption: "Soft Luxury",
+    description:
+      "Moda sofisticada com paletas neutras, tecidos finos e atmosfera refinada.",
     photographer: {
       name: "Pedro Nunes",
-      url: "#",
+      url: "https://unsplash.com/pt-br/@pedronuness/cole%C3%A7%C3%B5es",
     },
   },
   {
     id: 3,
-    image: "/photographsAuto/punk3.webp",
-    caption: "Punk",
-    description: "Atitude rebelde, couro, spikes e autenticidade sem regras.",
+    image: "/photographsAuto/bruno3.webp",
+    caption: "Natural e Urbano",
+    description:
+      "Retratos expressivos com luz natural, roupas casuais e cenário de cidade.",
     photographer: {
       name: "Bruno Neves",
-      url: "#",
+      url: "https://unsplash.com/pt-br/@brunoneves/cole%C3%A7%C3%B5es",
     },
   },
   {
     id: 4,
-    image: "/photographsAuto/classic3.webp",
-    caption: "Classic",
-    description: "Simplicidade refinada, cortes limpos e elegância atemporal.",
+    image: "/photographsAuto/mathias3.webp",
+    caption: "Movimento e Performance",
+    description: "Ensaios com dança, roupas fluidas e foco no corpo em ação.",
     photographer: {
       name: "Mathias Duarte",
-      url: "#",
+      url: "https://unsplash.com/pt-br/@mathiasduarte/cole%C3%A7%C3%B5es",
     },
   },
   {
     id: 5,
-    image: "/photographsAuto/grunge3.webp",
-    caption: "Grunge",
-    description: "Camadas desleixadas, xadrez, e uma vibe crua e urbana.",
+    image: "/photographsAuto/yago3.webp",
+    caption: "Street e Industrial",
+    description:
+      "Estética urbana crua com locações industriais, atitude e contraste visual.",
     photographer: {
-      name: "Ana Verde",
-      url: "#",
+      name: "Yago de Almeida",
+      url: "https://unsplash.com/pt-br/@yagodealmeida/cole%C3%A7%C3%B5es",
     },
   },
   {
     id: 6,
-    image: "/photographsAuto/vintage4.webp",
-    caption: "Vintage",
-    description: "O charme e a autenticidade do passado traduzidos em estilo.",
+    image: "/photographsAuto/luiza4.webp",
+    caption: "Vintage e Minimalismo",
+    description:
+      "Looks retrô com composições limpas, foco na estética elegante e simples.",
     photographer: {
       name: "Luiza Amaral",
-      url: "#",
+      url: "https://unsplash.com/pt-br/@luizaamaral/cole%C3%A7%C3%B5es",
     },
   },
   {
     id: 7,
-    image: "/photographsAuto/preppy4.webp",
-    caption: "Preppy",
-    description: "Elegância acadêmica, cores suaves e toques de tradição.",
+    image: "/photographsAuto/pedro4.webp",
+    caption: "Soft Luxury",
+    description:
+      "Moda sofisticada com paletas neutras, tecidos finos e atmosfera refinada.",
     photographer: {
       name: "Pedro Nunes",
-      url: "#",
+      url: "https://unsplash.com/pt-br/@pedronuness/cole%C3%A7%C3%B5es",
     },
   },
   {
     id: 8,
-    image: "/photographsAuto/punk4.webp",
-    caption: "Punk",
-    description: "Atitude rebelde, couro, spikes e autenticidade sem regras.",
+    image: "/photographsAuto/bruno4.webp",
+    caption: "Natural e Urbano",
+    description:
+      "Retratos expressivos com luz natural, roupas casuais e cenário de cidade.",
     photographer: {
       name: "Bruno Neves",
-      url: "#",
+      url: "https://unsplash.com/pt-br/@brunoneves/cole%C3%A7%C3%B5es",
     },
   },
   {
     id: 9,
-    image: "/photographsAuto/classic4.webp",
-    caption: "Classic",
-    description: "Simplicidade refinada, cortes limpos e elegância atemporal.",
+    image: "/photographsAuto/mathias4.webp",
+    caption: "Movimento e Performance",
+    description: "Ensaios com dança, roupas fluidas e foco no corpo em ação.",
     photographer: {
       name: "Mathias Duarte",
-      url: "#",
+      url: "https://unsplash.com/pt-br/@mathiasduarte/cole%C3%A7%C3%B5es",
     },
   },
   {
     id: 10,
-    image: "/photographsAuto/grunge4.webp",
-    caption: "Grunge",
-    description: "Camadas desleixadas, xadrez, e uma vibe crua e urbana.",
+    image: "/photographsAuto/yago4.webp",
+    caption: "Street e Industrial",
+    description:
+      "Estética urbana crua com locações industriais, atitude e contraste visual.",
     photographer: {
-      name: "Ana Verde",
-      url: "#",
+      name: "Yago de Almeida",
+      url: "https://unsplash.com/pt-br/@yagodealmeida/cole%C3%A7%C3%B5es",
     },
   },
 ];
