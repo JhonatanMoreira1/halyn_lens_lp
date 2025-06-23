@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { Button } from "./ui/button";
 import EmblaAutoScrollCarousel from "./AutoScrollEmblaCaurosel/js/EmblaCaurosel";
 import { EmblaOptionsType } from "embla-carousel";
 import Header from "./AutoScrollEmblaCaurosel/js/Header";
+import { FaWhatsapp } from "react-icons/fa";
 
 import { slides } from "./AutoScrollEmblaCaurosel/js/SlideData";
 import "./AutoScrollEmblaCaurosel/css/base.css";
@@ -78,13 +78,28 @@ function HeroSection() {
 
   return (
     <div className="HeroSection">
+      <div className="w-full sm:h-8 md:h-12 lg:h-18 xl:h-25">
+        <svg
+          className="block w-full"
+          viewBox="0 0 1440 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 43.9999C106.667 43.9999 213.333 7.99994 320 7.99994C426.667 7.99994 533.333 43.9999 640 43.9999C746.667 43.9999 853.333 7.99994 960 7.99994C1066.67 7.99994 1173.33 43.9999 1280 43.9999C1386.67 43.9999 1440 19.0266 1440 9.01329V100H0V43.9999Z"
+            className="fill-current text-[#512e5c]"
+          ></path>
+        </svg>
+      </div>
+
       <div
-        className="relative min-h-screen w-full bg-cover bg-center z-0"
+        className="relative min-h-screen w-full bg-cover bg-center z-0 "
         style={{
           backgroundImage: `url("/bgs/heroBG.webp")`,
         }}
       >
         {/* Overlay de cor */}
+
         <div className="absolute inset-0 bg-[#250E2D]/70" />
 
         {/* Gradiente no topo */}
@@ -98,26 +113,33 @@ function HeroSection() {
           } z-20`}
         >
           {/* Conteúdo central */}
-          <div className="relative p-20 text-white flex flex-col text-center space-y-5 z-30">
+          <div className="relative lg:p-20 px-20 pt-15 text-white flex flex-col text-center space-y-5 z-30">
             <h1 className="text-7xl font-bold">Conheça a Halyn Lens</h1>
             <p className="text-3xl">A marca de fotografia perfeita para você</p>
           </div>
 
           {/* Bloco de informações e testimonials */}
-          <div className="flex flex-col-reverse lg:flex-row min-h-[30em] w-full pt-[2em] px-[8em] justify-between mb-20 z-30">
-            <div className="text-white space-y-14">
-              <h1 className="text-4xl max-w-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <div className="flex flex-col-reverse lg:flex-row min-h-[30em] w-full pt-10 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 justify-evenly gap-5 mb-20 z-30">
+            <div className="text-white space-y-6 sm:space-y-14 text-center sm:text-left">
+              <h1 className="text-5xl max-w-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Se expresse por meio da fotografia
               </h1>
-              <p className="text-base md:text-3xl text-white w-full max-w-5xl lg:max-w-4xl">
+              <p className="text-xl md:text-3xl text-white w-full max-w-5xl lg:max-w-4xl">
                 Nossa missão é transmitir sentimentos através de cliques,
                 entendendo seu estilo e gênero favorito. Os fotógrafos da Halyn
                 Lens possuem gêneros de fotografia distintos, justamente para
                 que qualquer cliente encontre sua lente ideal.
               </p>
-              <Button className="bg-orange-500 hover:bg-[#D3B578] text-white font-semibold text-2xl px-12 py-9 rounded-full shadow-lg transition mt-10">
+
+              <a
+                href="#"
+                title=""
+                className="inline-flex items-center px-7 py-3 text-2xl font-bold text-white transition-all duration-200 sm:mt-0 bg-[#b89554] hover:bg-[#f5ba43ca] border border-transparent rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj justif-center"
+                role="button"
+              >
                 Faça seu orçamento online
-              </Button>
+                <FaWhatsapp className="text-gold w-13 h-13 ml-5" />
+              </a>
             </div>
 
             {/* Testimonials animados */}
@@ -128,9 +150,9 @@ function HeroSection() {
 
           {/* Bloco de ícones e carrossel */}
           <div className="flex justify-center items-center mb-0 z-20">
-            <div className="w-[85%] max-w-[1200px] max-h-[40em] aspect-square bg-white flex flex-col items-center justify-center rounded-t-2xl z-20">
-              <div className="w-full max-w-[1200px] max-h-[45em] h-[85%] aspect-square bg-white flex flex-col items-start pt-0 rounded-t-2xl z-20">
-                <div className="flex flex-row justify-between w-[85%] mx-auto gap-8 pb-[3.9rem]">
+            <div className="w-screen sm:w-full max-w-[110rem] bg-white flex flex-col items-center justify-center rounded-t-2xl z-20">
+              <div className="w-full flex flex-col items-start pt-0 rounded-t-2xl z-20 w-full">
+                <div className="flex flex-col md:flex-row justify-between w-full gap-12 mb-15  p-15">
                   {/* Bloco 1 */}
                   <div className="flex-1 text-center pt-4">
                     <div className="text-4xl mb-4">🎯</div>
@@ -172,9 +194,9 @@ function HeroSection() {
                 </div>
 
                 {/* Carrossel infinito */}
-                <div className="infiniteCaurosel flex flex-col justify-center items-center h-full w-full z-30">
+                <div className="infiniteCaurosel flex flex-col justify-center items-center w-full z-30 xl:mt-[-3rem] mt-[-7rem]">
                   <Header />
-                  <div>
+                  <div className="w-full">
                     <EmblaAutoScrollCarousel
                       slides={slides}
                       options={OPTIONS}
@@ -191,7 +213,3 @@ function HeroSection() {
 }
 
 export default HeroSection;
-
-// adicionar o carrossel infinito de estilos, escolher a label de cima
-// customizar os blocos
-// adicionar effects

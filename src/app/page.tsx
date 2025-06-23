@@ -10,9 +10,10 @@ import Storytelling from "@/components/Storytelling";
 import HeroSection from "@/components/HeroSection";
 import Hero from "@/components/Hero";
 import { useEffect, useState } from "react";
-import Testimonial1 from "@/components/Testimonials";
-import AboutUs14 from "@/components/About";
+import Testimonials from "@/components/Testimonials";
+import AboutUs from "@/components/About";
 import Footer from "@/components/Footer";
+import LogoCloud from "@/components/LogoCloud";
 
 // const SLIDE_COUNT = 5;
 // const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
@@ -39,13 +40,12 @@ export default function Home() {
 
       <HeroSection />
 
-      <Testimonial1 />
+      <Testimonials />
 
       <Storytelling />
-
+      <LogoCloud />
+      <AboutUs />
       <QuestionSection />
-
-      <AboutUs14 />
 
       <Footer />
     </div>

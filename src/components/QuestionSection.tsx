@@ -39,13 +39,13 @@ function QuestionSection() {
     >
       <hr className="w-full border-t border-gray-300 mb-10" />
       <div className="flex justify-center px-4 lg:px-0">
-        <div className="flex flex-col justify-center items-center px-5 lg:flex-row w-full h-full w-full gap-10">
+        <div className="flex flex-col justify-center items-center py-20 pt-10 pb-10 sm:pt-20 sm:pb-30  lg:flex-row w-full h-full w-full gap-10 lg:gap-40">
           {/* Texto Informativo */}
-          <div className="flex flex-col justify-center lg:pr-35 lg:h-[40em] md:w-[40em] lg:w-[45em]">
+          <div className="flex flex-col justify-center md:w-[40em] lg:w-[45em]">
             <h1 className="font-openSans text-3xl lg:text-4xl font-bold text-black mb-10 text-center lg:text-center">
               Por que Halyn Lens é pra você?
             </h1>
-            <div className="font-roboto text-[#555555dc] leading-relaxed space-y-6 text-lg sm:text-xl lg:text-3xl px-2 lg:px-0">
+            <div className="font-roboto text-[#555555dc] leading-relaxed space-y-6 text-xl sm:text-xl lg:text-3xl px-2 lg:px-0">
               <p>
                 Sessões fotográficas personalizadas para cada cliente com uma
                 vasta seleção de fotógrafos.
@@ -74,7 +74,7 @@ function QuestionSection() {
           </div>
 
           {/* Bloco de Dúvidas */}
-          <div className="flex flex-col w-ful h-full md:w-[40em] lg:w-[45em] mb-10">
+          <div className="flex flex-col w-full h-full md:w-[40em] lg:w-[45em] mb-10">
             <h1 className="font-openSans text-3xl lg:text-4xl font-bold text-black mb-10 text-center">
               Dúvidas comuns
             </h1>

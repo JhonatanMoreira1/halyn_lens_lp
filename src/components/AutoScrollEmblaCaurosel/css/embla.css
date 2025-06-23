@@ -1,12 +1,12 @@
 .scroll_embla {
-    max-width: 90vw;
-    /* usar a maior largura possível da viewport */
-    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
     --slide-height: 28rem;
-    /* maior altura dos cards */
     --slide-size: 90%;
     --slide-spacing: 0rem;
 }
+
 
 @media (min-width: 640px) {
     .scroll_embla {
@@ -19,6 +19,7 @@
         --slide-size: 30%;
     }
 }
+
 
 .scroll_embla__viewport {
     overflow: hidden;

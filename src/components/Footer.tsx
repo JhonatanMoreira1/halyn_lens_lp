@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-transparent">
       <div className="mx-auto min-w-screen px-4 pb-8 sm:px-6 lg:px-8">
-        <div className=" border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between px-10">
+        <div className=" border-t border-gray-150 pt-8 sm:space-y-0 space-y-8 sm:flex sm:items-center sm:justify-between px-10">
           <ul className="flex flex-wrap justify-center gap-6 text-3xl lg:justify-end">
             <li>
               <a href="#" className="text-gray-500 transition hover:opacity-75">

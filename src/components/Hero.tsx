@@ -64,11 +64,11 @@ function Hero() {
                 </div>
               </div>
 
-              <div className="mt-8 sm:flex sm:items-center sm:justify-center lg:justify-start sm:space-x-5 lg:mt-12">
+              <div className="mt-12 sm:flex sm:items-center sm:justify-center lg:justify-start sm:space-x-5 space-x-10 lg:mt-12">
                 <a
                   href="#"
                   title=""
-                  className="inline-flex items-center px-10 py-5 text-2xl font-bold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj justif-center hover:bg-gray-600"
+                  className="inline-flex items-center px-10 pt-6 py-5 text-2xl font-bold text-white transition-all duration-200 sm:mt-0 bg-gray-900 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj justif-center hover:bg-gray-600"
                   role="button"
                 >
                   Galeria de imagens
@@ -77,7 +77,7 @@ function Hero() {
                 <a
                   href="#"
                   title=""
-                  className="inline-flex items-center px-8 py-5 mt-4 text-2xl font-bold transition-all duration-200 bg-transparent border border-transparent sm:mt-0 font-pj justify-center rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 hover:bg-gray-200 focus:bg-gray-200 shadow-md"
+                  className="inline-flex items-center px-10 pb-6 py-5 text-2xl font-bold transition-all duration-200 bg-transparent border border-transparent sm:mt-0 font-pj justify-center rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 hover:bg-gray-200 focus:bg-gray-200 shadow-md"
                   role="button"
                 >
                   <svg

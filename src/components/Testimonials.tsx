@@ -127,7 +127,7 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ testimonial }) => (
   </div>
 );
 
-const Testimonial1: React.FC = () => {
+const Testimonials: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -158,8 +158,8 @@ const Testimonial1: React.FC = () => {
       <section className="ezy__testimonial1 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
         <div className="container px-4 mx-auto">
           <div className="flex justify-center md:mb-6">
-            <div className="sm:max-w-7xl text-center items-center flex flex-col">
-              <h2 className="text-3xl leading-none md:text-[45px] font-bold mb-5 sm:max-w-7xl">
+            <div className="sm:max-w-7xl text-center items-center flex flex-col py-10 xl:py-0">
+              <h2 className="text-6xl pb-5 xl:pb-0 leading-none md:text-[45px] font-bold mb-5 sm:max-w-7xl">
                 Como nossos clientes nos avaliam?
               </h2>
               <p className="sm:max-w-6xl text-center">
@@ -183,4 +183,4 @@ const Testimonial1: React.FC = () => {
   );
 };
 
-export default Testimonial1;
+export default Testimonials;

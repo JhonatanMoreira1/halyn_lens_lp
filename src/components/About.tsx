@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
-function AboutUs14() {
+function AboutUs() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -99,4 +99,4 @@ function AboutUs14() {
   );
 }
 
-export default AboutUs14;
+export default AboutUs;
