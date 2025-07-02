@@ -210,7 +210,7 @@ function HeroSection() {
                 </div>
 
                 {/* Carrossel infinito */}
-                <div className="infiniteCaurosel flex flex-col justify-center items-center w-full z-30 xl:mt-[-3rem] mt-[-7rem]">
+                <div className="infiniteCaurosel flex flex-col justify-center items-center w-full z-30 xl:mt-[-3rem] mt-[-7rem] pt-4">
                   <Header />
                   <div className="w-full">
                     <EmblaAutoScrollCarousel
