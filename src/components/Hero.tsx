@@ -24,10 +24,10 @@ function Hero() {
 
       <section className="relative py-12 sm:py-16 lg:pt-20 lg:pb-36">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-[90em]">
-          <div className="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5 gap-x-20">
+          <div className="flex flex-col-reverse gap-y-8 lg:items-center lg:grid lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5 gap-x-20">
             <div className="text-center xl:col-span-2 lg:text-left md:px-16 lg:px-0">
               <div className="max-w-sm mx-auto sm:max-w-md md:max-w-full">
-                <h1 className="text-4xl  font-bold leading-tight text-gray-900 sm:text-6xl sm:leading-tight lg:text-8xl lg:leading-tight font-pj">
+                <h1 className="text-4xl  font-bold leading-tight text-gray-900 sm:text-6xl sm:leading-tight lg:text-8xl lg:leading-tight font-pj hidden sm:block">
                   As lentes que refletem você
                 </h1>
 
@@ -100,6 +100,9 @@ function Hero() {
             </div>
 
             <div className="xl:col-span-3">
+              <h1 className="text-6xl text-center pb-8 font-bold leading-tight text-gray-900 sm:text-6xl sm:leading-tight lg:text-8xl lg:leading-tight font-pj md:hidden lg:hidden xl:hidden 2xl:hidden">
+                As lentes que refletem você
+              </h1>
               <EmblaCarousel slides={slides} options={OPTIONS} />
             </div>
           </div>

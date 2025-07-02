@@ -102,12 +102,9 @@ const LogoCloud: React.FC = () => {
                   <h2 className="font-bold text-center text-[30px] lg:text-[44px] xl:text-[50px] xl:text-left lg:text-left leading-none mb-6">
                     Empresas que aprovam Halyn Lens
                   </h2>
-                  <p className="text-xl text-center lg:text-2xl xl:text-3xl xl:text-left lg:text-left leading-relaxed opacity-70">
+                  <p className="text-2xl text-center lg:text-2xl xl:text-3xl xl:text-left lg:text-left leading-relaxed opacity-70">
                     Grandes marcas confiam na Halyn Lens para traduzir estilo,
-                    personalidade e autenticidade em imagens marcantes. Unimos
-                    direção criativa, estética refinada e identidade visual para
-                    criar fotografias que vendem, conectam e contam histórias
-                    com propósito.
+                    personalidade e autenticidade em imagens marcantes.
                   </p>
                 </div>
               </div>

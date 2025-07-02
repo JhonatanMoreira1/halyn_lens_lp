@@ -87,10 +87,10 @@ function HeroSection() {
   }, []);
 
   return (
-    <div className="HeroSection">
-      <div className="w-full sm:h-8 md:h-12 lg:h-18 xl:h-25">
+    <div id="heroSectionComponent" className="HeroSection">
+      <div className="w-full sm:h-10 md:h-12 lg:h-18 xl:h-25 2xl:h-35 ">
         <svg
-          className="block w-full"
+          className="block w-full "
           viewBox="0 0 1440 100"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@ function HeroSection() {
               <h1 className="text-5xl max-w-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Se expresse por meio da fotografia
               </h1>
-              <p className="text-xl md:text-3xl text-white w-full max-w-5xl lg:max-w-4xl">
+              <p className="text-xl md:text-3xl text-white w-full max-w-5xl lg:max-w-4xl hidden sm:block">
                 Nossa missão é transmitir sentimentos através de cliques,
                 entendendo seu estilo e gênero favorito. Os fotógrafos da Halyn
                 Lens possuem gêneros de fotografia distintos, justamente para
@@ -159,7 +159,7 @@ function HeroSection() {
           </div>
 
           {/* Bloco de ícones e carrossel */}
-          <div className="flex justify-center items-center mb-0 z-20">
+          <div className="flex justify-center items-center z-20">
             <div className="w-screen sm:w-full max-w-[110rem] bg-white flex flex-col items-center justify-center rounded-t-2xl z-20">
               <div className="w-full flex flex-col items-start pt-0 rounded-t-2xl z-20 w-full">
                 <div className="flex flex-col md:flex-row justify-between w-full gap-12 mb-15 p-15">

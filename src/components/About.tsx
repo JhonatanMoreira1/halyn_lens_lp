@@ -30,7 +30,10 @@ function AboutUs() {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       } z-20`}
     >
-      <section className="ezy__about14 light py-24 md:py-32 bg-[url('/storytelling/image1.jpg')] bg-cover bg-no-repeat bg-center text-white relative">
+      <section
+        id="aboutComponent"
+        className="ezy__about14 light py-24 md:py-32 bg-[url('/storytelling/image1.jpg')] bg-cover bg-no-repeat bg-center text-white relative"
+      >
         {/* Overlay escuro - abaixo do conteúdo mas acima do background */}
         <div className="absolute inset-0 bg-black/75" />
 
@@ -42,7 +45,7 @@ function AboutUs() {
                 <h1 className="uppercase text-5xl md:text-7xl lg:text-7xl leading-tight font-bold mb-10">
                   SOBRE NÓS
                 </h1>
-                <p className="text-xl lg:text-2xl leading-relaxed opacity-90">
+                <p className="text-2xl lg:text-2xl leading-relaxed opacity-90">
                   A Halyn Lens é um estúdio fotográfico autoral que transforma
                   imagens em narrativas visuais profundas e autênticas.
                   Especializada em retratar identidade, expressão e estética com
@@ -64,7 +67,7 @@ function AboutUs() {
             </div>
             <div className="col-span-12 lg:col-span-7 mt-14 lg:mt-0">
               <div className="lg:ml-12 bg-black/50 p-10 rounded-lg">
-                <p className="text-xl lg:text-2xl leading-relaxed opacity-90 mb-8">
+                <p className="text-2xl lg:text-2xl leading-relaxed opacity-90 mb-8">
                   A prática da fotografia começou em 1826, sendo acessível para
                   pouquíssimas pessoas, o processo era caro, complexo e requiria
                   equipamentos além da imaginação de um cidadão comum. Hoje em
@@ -72,7 +75,7 @@ function AboutUs() {
                   celular, fotografia se tornou algo banal, mas ter uma câmera
                   não torna alguém um bom fotógrafo.
                 </p>
-                <p className="text-xl lg:text-2xl leading-relaxed opacity-90 mb-8">
+                <p className="text-2xl lg:text-2xl leading-relaxed opacity-90 mb-8">
                   É comum entrarmos perfis do instagram repletos de fotografias
                   com a exata mesma pose, imagens que não dizem nada sobre quem
                   as tirou, e com a popularização das IA’s, a criatividade e
@@ -81,7 +84,7 @@ function AboutUs() {
                   fotógrafos que se proponham a contar suas histórias através
                   desses retratos de momentos.
                 </p>
-                <p className="text-xl lg:text-2xl leading-relaxed opacity-90">
+                <p className="text-2xl lg:text-2xl leading-relaxed opacity-90">
                   A Halyn Lens trás para esses estilistas a facilidade de
                   encontrar fotógrafos com os quais se identifiquem, que estejam
                   dispostos a capturar suas histórias e individualidade,

@@ -38,8 +38,8 @@ function DesktopNavbar() {
           <div className="flex items-center justify-between w-full h-full">
             <div className="flex flex-shrink-0 flex-row items-center space-x-3 flex-wrap">
               <Image
-                width={scrolled ? 60 : 90}
-                height={scrolled ? 20 : 30}
+                width={scrolled ? 45 : 69}
+                height={scrolled ? 15 : 23}
                 className="transition-all duration-300 ease-out max-w-full h-auto"
                 src={"/logos/halyn-logo.png"}
                 alt=""
@@ -71,7 +71,7 @@ function DesktopNavbar() {
             <div className="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10">
               <div className="flex items-center space-x-12">
                 <a
-                  href="#"
+                  href="#aboutComponent"
                   title=""
                   className="text-2xl font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
                 >
@@ -80,7 +80,7 @@ function DesktopNavbar() {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://linktr.ee/halynlens"
                   title=""
                   className="text-2xl font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
                 >
@@ -89,24 +89,29 @@ function DesktopNavbar() {
                 </a>
 
                 <a
-                  href="#"
+                  href="#heroSectionComponent"
                   title=""
                   className="text-2xl font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
                 >
                   {" "}
-                  Ajuda{" "}
+                  Fotógrafos{" "}
                 </a>
               </div>
 
               <div className="w-px h-5 bg-gray-300"></div>
-
               <a
                 href="#"
                 title=""
                 className="text-2xl font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (typeof window !== "undefined" && window.chatbase) {
+                    window.chatbase("open");
+                  }
+                }}
               >
                 {" "}
-                Serviços{" "}
+                Ajuda{" "}
               </a>
 
               <a
