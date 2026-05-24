@@ -28,7 +28,7 @@ const testimonialList: Testimonial[] = [
   {
     author: {
       fullName: "Rafaela de Aquiles",
-      picture: "https://cdn.easyfrontend.com/pictures/users/user4.jpg",
+      picture: "/testimonials/woman.png",
       designation: "Estilista e Diretora Criativa",
     },
     rating: 5.0,
@@ -38,7 +38,7 @@ const testimonialList: Testimonial[] = [
   {
     author: {
       fullName: "Caio Vidal",
-      picture: "https://cdn.easyfrontend.com/pictures/users/user19.jpg",
+      picture: "/testimonials/man.png",
       designation: "Empresário do setor criativo e Investidor",
     },
     rating: 4.8,
@@ -48,7 +48,7 @@ const testimonialList: Testimonial[] = [
   {
     author: {
       fullName: "Viviane Martins",
-      picture: "https://cdn.easyfrontend.com/pictures/users/user8.jpg",
+      picture: "/testimonials/woman2.png",
       designation: "Diretora de Arte | Produtora de Moda",
     },
     rating: 5.0,
@@ -58,7 +58,7 @@ const testimonialList: Testimonial[] = [
   {
     author: {
       fullName: "Eduardo Santana",
-      picture: "https://cdn.easyfrontend.com/pictures/users/user17.jpg",
+      picture: "/testimonials/man2.png",
       designation: "Fotógrafo premiado | Curador de imagem",
     },
     rating: 4.7,
@@ -139,7 +139,7 @@ const Testimonials: React.FC = () => {
           observer.disconnect(); // só anima uma vez
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (sectionRef.current) {
